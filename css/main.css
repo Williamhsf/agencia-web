@@ -1,0 +1,674 @@
+/* Start Reset */
+:root {
+  font-size: 62.5%;
+  --font-default: 'Roboto', sans-serif;
+  /* colors */
+  --gray-1: #333;
+  --gray-2: #353D41;
+  --gray-3: #444;
+  --white-1: #FFF;
+  --white-2: #F9F9F9;
+  --blue: #65DAF9;
+  --blue-2: #3EC1D5;
+
+  --zero: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-default);
+}
+
+p, li {
+  color: var(--gray-3);
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style: none;
+  color: #65DAF9;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 7rem 0;
+}
+/* End Reset */
+
+/* Start Barra de Navegacao */
+header, .navbar {
+  background-color: var(--gray-1);
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 7.5rem;
+}
+
+.navbar-brand {
+  margin-left: 1.6rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.navbar-brand span{
+  font-size: 1.6rem;
+  color: var(--white-1);
+}
+
+.navbar-brand span:hover {
+  color: var(--white-2);
+}
+
+
+#navbar-links a {
+  color: var(--white-1);
+  font-size: 1.6rem;
+  transition: .5s;
+}
+
+#navbar-links a:hover {
+  color: var(--white-2);
+}
+
+.navbar-expand-lg {
+  padding: 0 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+}
+/* End Barra de Navegacao */
+
+/* Start Slider */
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+  height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+  top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+
+#mainSlider .carousel-caption p {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 10rem;
+  color: var(--white-1);
+}
+
+.main-btn {
+  background-color: var(--blue);
+  color: var(--white-1);
+  text-transform: uppercase;
+  width: 20rem;
+  height: 6rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: 0.3rem solid transparent;
+  transition: .5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: var(--white-1);
+  background-color: transparent;
+  border-color: var(--blue);
+}
+
+.carousel-indicators button.active  {
+  background-color: var(--blue);
+}
+/* End Slider */
+/* Start Sobre a empresa */
+#about-area {
+  background-color: var(--white-2);
+}
+
+.main-title {
+  margin: 0 0 6.5rem 0;
+  color: var(--gray-3);
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.main-title::after {
+  content: "";
+  border-top: .2rem solid var(--gray-1);
+  width: 15%;
+
+  position: absolute;
+  top: 6rem;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 1.7rem;
+  color: var(--gray-3);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#about-list {
+  padding-left: 0;
+}
+
+#about-list li {
+  line-height: 3rem;
+  font-size: 1.6rem;  
+}
+
+#about-list i {
+  color: var(--blue);
+  margin-right: 1.5rem;
+}
+/* End Sobre a empresa */
+
+/* Start servicos */
+.service-box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.service-box i, 
+.service-box h4 {
+  transition: .5s;
+  color: var(--gray-2);
+}
+
+.service-box i {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.service-box h4 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.service-box:hover > i,
+.service-box:hover > h4 {
+  color: var(--blue);
+}
+/* End servicos */
+
+/* Start Dados da Empresa */
+.circle-box div {
+  padding: 0 4rem;
+}
+
+.progressbar-text {
+  font-weight: 700;
+  font-size: 3.2rem;  
+}
+
+#data-area p {
+  color: var(--white-1);
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 2rem;
+}
+/* End Dados da Empresa */
+
+/* Start Time */
+.card-body {
+  text-align: center;
+}
+/* End Time */
+
+/* Start Trabalhe Conosco */
+#apply-area {
+  height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row {
+  height: 100%;
+}
+
+#apply-area .apply-box {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+#company-img {
+  background-image: url('../img/empresa.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+#pattern-img h4, #pattern-img p {
+  color: var(--white-1);
+}
+
+#pattern-img h4 {
+  margin-top: 8%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#pattern-img p {
+  margin-bottom: 20px;
+}
+
+#apply-btn {
+  display: block;
+  height: auto;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: var(--white-1);
+}
+
+#apply-btn:hover {
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+/* End Trabalhe Conosco */
+
+/* Start Portfolio */
+.project-box {
+  margin-bottom: 3rem;
+}
+
+#filter-btn-box {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#portfolio-area .filter-btn {
+  color: var(--gray-2);
+  border: 0.1rem solid var(--gray-2);
+  background-color: transparent;
+  text-transform: none;
+  margin: 0 1.5rem;
+  width: auto;
+  height: 4rem;
+  padding: 0 2rem;
+  line-height: 4rem;
+}
+
+#portfolio-area .filter-btn.active,
+#portfolio-area .filter-btn:hover {
+  color: var(--white-1);
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+/* End Portfolio */
+
+/* Start News Letter */
+#news-area {
+  text-align: center;
+  background-color: var(--white-2);
+}
+
+#news-area form input[type="email"] {
+  font-size: 1.5rem;
+  color: var(--gray-2);
+  padding-left: 1.6rem;
+}
+
+#news-area p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+#email-input {
+  border-radius: 0;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: 0.1rem solid var(--blue);
+  display: inline;
+  width: 40%;
+  height: 4rem;
+}
+
+#news-btn {
+  position: absolute;
+  height: 4rem;
+  padding: 0 3rem;
+  margin-left: -12rem;
+  transition: 0.5s;
+
+  background-color: var(--blue);
+  color: var(--white-1);
+  text-transform: uppercase;
+  
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border: 0.1rem solid var(--blue);
+}
+
+#news-btn:hover {
+  background-color: var(--white-1);
+  color: var(--blue);
+}
+/* End News Letter */
+
+/* Start Call to action */
+#call-area .container {
+  padding: 4rem 10rem;
+}
+
+#call-area {
+  background-color: var(--blue);
+  text-transform: uppercase;
+}
+
+#call-area .row {
+  display: block;
+  text-align: center;
+}
+
+#call-area p {
+  width: auto;
+  height: 6rem;
+  line-height: 6rem;
+  color: var(--white-1);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+  display: inline;
+}
+
+#call-area #call-btn {
+  background-color: var(--white-1);
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 3rem;
+  width: auto;
+}
+/* End Call to action */
+
+/* Start Footer */
+#contact-area {
+  text-align: center;
+}
+
+.contact-box {
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 0.1rem solid var(--blue-2);
+}
+
+.contact-box i {
+  color: var(--gray-3);
+  border: solid .1rem var(--gray-3);
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  font-size: 2.4rem;
+  margin-bottom: 2.0rem;
+}
+
+.contact-title {
+  font-weight: 700;
+  color: var(--blue-2);
+}
+
+#msg-box {
+  font-size: 2.2rem;
+}
+
+#contact-form input[type="email"], #contact-form input[type="text"], #contact-form textarea {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  border-radius: 0;
+  color: var(--gray-3);
+}
+
+#contact-form .main-btn {
+  width: 16rem;
+  height: 5rem;
+}
+
+#contact-form .main-btn:hover {
+  color: var(--blue-2);
+}
+/* End Footer */
+
+/* Start Copy */
+#copy-area {
+  background-color: var(--white-2);
+}
+
+#copy-area .container {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  margin-bottom: 0;
+}
+
+#copy-area .container a {
+  font-weight: bold;
+  color: var(--gray-3);
+}
+
+#copy-area .container a:hover {
+  text-decoration: none;
+  color: var(--blue-2);
+}
+
+/* End Copy */
+
+/* Start responsive 768px */
+@media(max-width: 768px) {
+  /* geral */
+  .container {
+    padding: 2rem 0;
+  }
+
+  /* slider */
+  #mainSlider .carousel-inner,
+  #mainSlider .carousel-item {
+    height: auto;
+  } 
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 2.8rem;
+  }
+
+  #mainSlider .carousel-caption p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .carousel-caption {
+    left: 10%;
+    right: 10%;
+  }
+
+  /* about */
+  #about-area img {
+    margin-top: 10rem
+  }
+
+
+
+  #about-list li {
+    font-size: 1.2rem;
+  }
+
+  #about-list i {
+    margin-right: .5rem;
+  }
+
+  /* data */
+  .circle-box div {
+    padding: 0 1rem;
+  }
+
+  #data-area p {
+    font-size: 1.6rem;
+  }
+  
+  /* team */
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+
+  /* apply */
+  #apply-area .apply-box {
+    padding: 5rem 2.5rem;
+  }
+  
+  /* news */
+  
+  #news-area p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  #email-input {
+    width: 80%;
+  }
+
+  #call-area {
+    margin-top: 3rem;
+  }
+
+  #call-area .container {
+    padding: 3rem;
+  }
+
+  #call-area p,
+  #call-area #call-btn {
+    font-size: 1.6rem;
+  }
+} 
+/* End responsive 768px */
+
+/* Start responsive 425px */
+@media(max-width: 425px) {
+  /* slider */
+  #mainSlider {
+   margin-top: 7.5rem;
+  }
+
+  #mainSlider .carousel-caption {
+    top: 5%;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 1.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  #mainSlider .carousel-caption p {
+    display: none;
+  }
+
+  .carousel-caption .main-btn {
+    font-size: 14px;
+  }
+
+  /* about */
+  .main-title {
+    font-size: 3rem;
+  }
+
+  #about-area img {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  /* data */
+  #data-area {
+    height: auto;
+  }
+  .circle-box {
+    width: 50%;
+  }
+
+  #team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+
+  /* apply */
+  #apply-area {
+    height: auto;
+  }
+
+  #company-img {
+    display: none;
+  }
+
+  /* filter */
+  #portfolio-area .filter-btn {
+    margin-bottom: 2rem;
+  }
+
+  .project-box {
+    width: 50%;
+  }
+
+  /* news */
+  #news-area .main-title {
+    font-size: 2.4rem;
+  }
+
+  #news-area p {
+    font-size: 1.6rem;
+  }
+
+  #email-input {
+    width: 80%;
+  }
+  
+  /* cta */
+  #call-area p, #call-area #call-btn {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    margin: 0;
+    width: 50%;
+  }
+
+  #call-area #call-btn {
+    font-size: 1.4rem;
+  }
+
+  /* contact */
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+/* End responsive 425px */
